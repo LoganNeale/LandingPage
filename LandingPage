@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FruteBowl | Games & Learning</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+</div>
+
+<script>
+    $('#navId a').click(e => {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+  <header>
+    <h1 style="text-align:center;">FruteBowl</h1>
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab('home')">Home</button>
+      <button class="tab-button" onclick="openTab('games')">Games</button>
+      <button class="tab-button" onclick="openTab('learning')">Learning</button>
+    </div>
+  </header>
+
+  <main>
+   <section id="home" class="tab-content active">
+  <h2>Welcome to FruteBowl!</h2>
+  <p>Play. Learn. Grow. Discover the world of fun and education with FruteBowl!</p>
+
+  <section id="about" class="text-center my-5">
+  <h2>About FruteBowl</h2>
+  <p>FruteBowl is a playful and educational platform that combines fun, interactive games with core learning goals. Whether you're mastering math, building vocabulary, or exploring STEM, FruteBowl makes learning exciting for every child!</p>
+  </section>
+
+  <section style="background-color: #996a14; text-align: center;">
+  <h2 class="fw-bold">Game of the Month</h2>
+  <p class="mb-4">Making a Website – Having fun!</p>
+  <a href="#games" class="btn btn-warning">Play Now</a>
+</section>
+
+<section id="games" style="background-color: #fdfdfd;">
+  <h2 class="text-center fw-bold mb-4">Our Games</h2>
+  <div class="row g-4 px-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="game-card p-3">
+        <img src="frutebowl-mascot.jpg.jpg" class="img-fluid mb-3" alt="WordPop">
+        <h5 class="fw-bold">WordPop</h5>
+        <p>Boost vocabulary and spelling in a fun, fast-paced puzzle challenge!</p>
+        <a href="#" class="btn btn-outline-warning w-100">Play Now</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="game-card p-3">
+        <img src="frutebowl-mascot-pi-nelope.png" class="img-fluid mb-3" alt="Timetable Towers">
+        <h5 class="fw-bold">Timetable Towers</h5>
+        <p>Climb the tower by solving multiplication puzzles against the clock.</p>
+        <a href="#" class="btn btn-outline-warning w-100">Play Now</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="game-card p-3">
+        <img src="images/fraction-flip.jpg" class="img-fluid mb-3" alt="Fraction Flip">
+        <h5 class="fw-bold">Fraction Flip</h5>
+        <p>Match fractions and decimals in this memory-boosting game.</p>
+        <a href="#" class="btn btn-outline-warning w-100">Play Now</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="game-card p-3">
+        <img src="images/pattern-detective.jpg" class="img-fluid mb-3" alt="Pattern Detective">
+        <h5 class="fw-bold">Pattern Detective</h5>
+        <p>Spot and solve patterns to train your logical thinking skills.</p>
+        <a href="#" class="btn btn-outline-warning w-100">Play Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="games" class="tab-content">
+      <h2>Games</h2>
+      <ul>
+        <li id="WordPop">WordPop</li>
+        <li id="Timetable Towers">Timetable Towers</li>
+        <li id="Fraction Flip">Fraction Flip</li>
+        <li id="Pattern Detective">Pattern Detective</li>
+        <li id="Molecule Builder">Molecule Builder</li>
+        <li id="Time-Traveler">Time Traveler</li>
+      </ul>
+    <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      Word Pop
+    </div>
+    <div class="col">
+      Timetable Towers
+    </div>
+    <div class="col">
+      Fraction Flip
+    </div>
+  </div>
+</div>
+    <div class="game-card">
+      <img src="frutebowl-mascot.jpg.jpg" alt="WordPop Game">
+      <h3>WordPop</h3>
+      <p>Boost your vocabulary and spelling through a fun, fast-paced word puzzle challenge!</p>
+    </div>
+    <div class="game-card">
+      <img src="frutebowl-mascot-pi-nelope.png" alt="Timetable Towers">
+      <h3>Timetable Towers</h3>
+      <p>Climb the tower by solving multiplication puzzles against the clock.</p>
+    </div>
+    <div class="game-card">
+      <img src="images/fraction-flip.jpg" alt="Fraction Flip">
+      <h3>Fraction Flip</h3>
+      <p>Match fractions and decimals in this memory-boosting card flip game.</p>
+    </div>
+    <div class="game-card">
+      <img src="images/pattern-detective.jpg" alt="Pattern Detective">
+      <h3>Pattern Detecive</h3>
+      <p>Pattern Detective.</p>
+    </div>
+  </div>
+    </section>
+
+    <section id="learning" style="background-color: #fff6e5; text-align: center;">
+  <h2 class="fw-bold">Learning Hub</h2>
+  <p class="mb-4">Explore STEM, language, and creative activities designed for kids of all ages.</p>
+  <ul class="list-unstyled">
+    <li>STEM Topics</li>
+    <li>Reading and Writing</li>
+    <li>Creative Writing</li>
+  </ul>
+</section>
+
+  <section id="contact" style="text-align: center;">
+  <h2 class="fw-bold">Contact Us</h2>
+  <p>Have questions or feedback? Email us at <a href="mailto:services@frutebowl.com">services@frutebowl.com</a>.</p>
+</section>
+
+  <footer>
+    <p style="text-align:center;">&copy; 2025 FruteBowl. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script>
+    function openTab(tabId, sectionId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+      if (sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+  </script>
+</body>
+</html>
